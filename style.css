@@ -1,0 +1,54 @@
+
+body{
+    background-color:rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+}
+
+input[type="number"].spinner::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+#part1{
+    margin-bottom: 50px;
+}
+
+.maindiv{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    position: sticky;
+}
+nav{
+    position: fixed;
+}
+.game-description{
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    transition: ease-in;
+}
+#part2{
+    margin-bottom:50px;
+}
+
+.rules {
+    opacity: 0;
+    transform: translateY(50%);
+    animation: slideIn 0.5s forwards;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
